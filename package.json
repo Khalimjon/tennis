@@ -1,0 +1,43 @@
+{
+  "name": "tennis",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ./build && tsc",
+    "watch": "nodemon src/main.ts",
+    "start": "rimraf ./build && tsc && node -r dotenv/config build/main.js",
+    "dev": "ts-node -r dotenv/config src/main.ts",
+    "prettier": "prettier --write {src,test}/**/*.ts"
+  },
+  "keywords": [],
+  "author": {
+    "email": "just_khalim@gmail.com",
+    "name": "Khalimjon Khikmatjonov"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@typegoose/typegoose": "^11.5.0",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "joi": "^17.9.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.5.0",
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/body-parser": "^1.19.2",
+    "@types/cors": "^2.8.14",
+    "@types/express": "^4.17.19",
+    "@types/jsonwebtoken": "^9.0.2",
+    "eslint": "^8.48.0",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.2.2"
+  }
+}
